@@ -73,6 +73,8 @@ while running and user.isAlive():
         print("yee")
     elif command == "frisk":
         print("Did you mean: 'Chara'?")
+    elif command == "chara":
+        print("Did you mean: 'Frisk'?")
     elif command == "undertale":
         print("The game understands how simular it is to undertale, but assures you that its totally different. You feel determined.")
     elif command.startswith("move "):
@@ -217,6 +219,21 @@ while running and user.isAlive():
 
                 elif command == "slap manager":
                     print("You go to slap the manager but they catch your hand mid-slap! They stare into your soul, an empty look in their eyes....you're gonna have a bad time.")
+
+                    elif command == "punch manager":
+                    print("You chicken out and decide a punch might be a bit much. Maybe try a slap ?")
+
+                elif command == "kick manager":
+                    print("You wind up for a kick then look down at the managers legs, they're made of steel! They must work out. You should work out more.... Anyways, No way you could go up against that. Maybe try a magic attack?")
+
+                elif command == "curb stomp manager":
+                    print("You are in a restaurant. There is not a curb in sight to stomp with! Maybe try something smaller like a kick?")
+
+                elif command == "fight manager":
+                    print("You cannot fight the manager. You'll get kicked out! ....but just between you and me, the fight commands are (punch manager) (kick manager) (curb stomp manager) (magic attack manager) and (slap manager) ")
+
+                elif command == "magic attack manager":
+                    print("You sommon all the power within, which isn't much. You see Gandolf in the distance, looking at you, dissapointed. You lose your confidence and decide not to attack with magic.")
 
                 if tile.manager.health > 0:
                     user.health -= tile.manager.damage
